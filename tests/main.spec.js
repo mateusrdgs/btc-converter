@@ -30,4 +30,22 @@ describe('Main CLI', () => {
       done();
     });
   });
+  it('should return the currency when btc-converter --help', (done) => {
+    exec(`${btcConverter} --help`, (err, stdout) => {
+      if (err) {
+        throw err;
+      }
+      expect(stdout.includes('--currency')).to.be.true();
+      done();
+    });
+  });
+  it('should return the amount when btc-converter --help', (done) => {
+    exec(`${btcConverter} --help`, (err, stdout) => {
+      if (err) {
+        throw err;
+      }
+      expect(stdout.includes('--amount')).to.be.true();
+      done();
+    });
+  });
 });

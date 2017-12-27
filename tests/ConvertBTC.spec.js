@@ -14,6 +14,6 @@ describe('ConvertBTC', () => {
     expect(convertBTC()).to.be.equal('1 BTC to USD = 2000.00');
   });
   it('should return BRL as currency an 10 as amount when defined', () => {
-    expect(convertBTC('BRL', 10)).to.be.equal('1 BTC to BRL = 2000.00');
+    expect(convertBTC('BRL', 10)).to.be.equal('10 BTC to BRL = 2000.00');
   });
 });
