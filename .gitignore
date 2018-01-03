@@ -45,3 +45,6 @@ jspm_packages
 
 # source files
 /bin
+
+# env files
+.env
